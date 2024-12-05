@@ -93,6 +93,7 @@ int main()
                         continue;
                     }
                     // 非阻塞IO，这个条件表示数据全部读取完毕
+                    // why????????????
                     else if (bytes_read == -1 && ((errno == EAGAIN) || (errno == EWOULDBLOCK)))
                     {
                         printf("finish reading once, errno: %d\n", errno);
