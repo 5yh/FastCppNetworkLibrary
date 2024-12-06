@@ -9,4 +9,4 @@ public:
     InetAddress();
     InetAddress(const char *ip, uint16_t port);
     ~InetAddress();
-}
+};

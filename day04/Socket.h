@@ -17,4 +17,4 @@ public:
 
     int accept(InetAddress *);
     int getFd();
-}
+};
