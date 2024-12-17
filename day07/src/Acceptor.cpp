@@ -12,8 +12,10 @@ Acceptor::Acceptor(EventLoop *_loop) : loop(_loop)
     sock->bind(addr);
     sock->listen();
     sock->setnonblocking();
+    // Channel类处理描述符和与其相关的处理函数
     acceptChannel = new Channel(loop, sock->getFd());
     std::function<void()> cb = std::bind(&Acceptor::acceptConnection, this);
+    // 绑定了一个回调函数
     acceptChannel->setCallback(cb);
     acceptChannel->enableReading();
 }
