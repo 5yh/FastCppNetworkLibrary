@@ -1,6 +1,7 @@
 #pragma once
 #include <sys/epoll.h>
 #include <functional>
+#include <cstdio>
 class EventLoop;
 // 连接了文件描述符和事件处理逻辑
 class Channel
