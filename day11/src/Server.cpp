@@ -37,6 +37,7 @@ void Server::deleteConnection(int sockfd)
             connections.erase(sockfd);
             // 据说这样会段错误？要
             delete conn;
+            conn = nullptr;
             // 这个delete已经调用了close sockfd
             // close(sockfd);
         }
