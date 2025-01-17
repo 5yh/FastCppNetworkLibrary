@@ -11,6 +11,7 @@ Acceptor::Acceptor(EventLoop *_loop) : loop(_loop), sock(nullptr), acceptChannel
     // sock->setnonblocking();
     acceptChannel = new Channel(loop, sock->getFd());
     std::function<void()> cb = std::bind(&Acceptor::acceptConnection, this);
+    // 感觉实际上应该叫做acceptCallback?
     acceptChannel->setReadCallback(cb);
     acceptChannel->enableRead();
     // main reactor的channel不需要线程池，一个线程就够了
