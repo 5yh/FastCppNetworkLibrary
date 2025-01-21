@@ -53,6 +53,8 @@ void TcpConnection::HandleClose()
         state_ = ConnectionState::Disconnected;
         if (on_close_)
         {
+            // 在这里调用了tcpserver的HandleClose，如果tcpserver中就把tcpconnection析构了
+            // 那么这个tcpconnection对象还没有执行完，就被删了，所以会报错
             on_close_(connfd_);
         }
     }

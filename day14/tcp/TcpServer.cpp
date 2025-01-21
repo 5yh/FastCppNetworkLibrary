@@ -70,6 +70,7 @@ void TcpServer::HandleClose(int fd)
     connectionsMap_.erase(fd);
     // delete conn;
     // 没有析构，所以在这里进行了 close以先关闭连接
+    // 详见tcpconnection的handleclose注释
     ::close(fd);
     conn = nullptr;
 }
