@@ -20,7 +20,7 @@ void Channel::HandleEvent() const
         std::shared_ptr<void> guard = tie_.lock();
         HandleEventWithGuard();
     }
-    else // 什么情况下tied_为false，没有绑定tied_
+    else // 什么情况下tied_为false，没有绑定tied_，处理新连接
     {
         std::cout << "tied_为false\n";
         HandleEventWithGuard();
