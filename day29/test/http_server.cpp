@@ -231,6 +231,13 @@ void HttpResponseCallback(const HttpRequest &request, HttpResponse *response)
             response->SetStatusMessage("OK");
             response->SetContentType("text/plain");
         }
+        else if (url == "/upload")
+        {
+            response->SetStatusCode(HttpResponse::HttpStatusCode::k302K);
+            response->SetStatusMessage("Moved Temporarily");
+            response->SetContentType("text/html");
+            response->AddHeader("Location", "/fileserver");
+        }
     }
 
     // LOG_INFO << response->message();
