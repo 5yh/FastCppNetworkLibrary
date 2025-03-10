@@ -1,3 +1,0 @@
-/home/syh/code/30dayServer/day26/build/CMakeFiles/webserver.dir
-/home/syh/code/30dayServer/day26/build/CMakeFiles/edit_cache.dir
-/home/syh/code/30dayServer/day26/build/CMakeFiles/rebuild_cache.dir
