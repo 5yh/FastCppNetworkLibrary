@@ -1,0 +1,5 @@
+/home/syh/code/30dayServer/day21/build/CMakeFiles/webserver.dir
+/home/syh/code/30dayServer/day21/build/CMakeFiles/echoserver.dir
+/home/syh/code/30dayServer/day21/build/CMakeFiles/test_context.dir
+/home/syh/code/30dayServer/day21/build/CMakeFiles/edit_cache.dir
+/home/syh/code/30dayServer/day21/build/CMakeFiles/rebuild_cache.dir
