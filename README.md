@@ -1,10 +1,10 @@
 [中文README](./READMECN.md)
 
-# FastCppWebServer
+# FastCppNetworkLibrary
 
 ## Introduction
 
-FastCppWebServer is a high-performance web server based on C++ that supports the HTTP protocol. It implements basic HTTP request handling, file upload and download, logging, and other functions. The project structure includes modules such as an HTTP server, TCP server, event loop, logging system, and timer.
+FastCppNetworkLibrary is a high-performance web server based on C++ that supports the HTTP protocol. It implements basic HTTP request handling, file upload and download, logging, and other functions. The project structure includes modules such as an HTTP server, TCP server, event loop, logging system, and timer.
 
 ## Features
 
@@ -18,8 +18,8 @@ FastCppWebServer is a high-performance web server based on C++ that supports the
 
 1. Clone the project to your local machine:
     ```bash
-    git clone https://github.com/5yh/FastCppWebServer.git
-    cd FastCppWebServer
+    git clone https://github.com/5yh/FastCppNetworkLibrary.git
+    cd FastCppNetworkLibrary
     ```
 
 2. Build the project:
